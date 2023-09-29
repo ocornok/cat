@@ -1,0 +1,214 @@
+body {
+    font-family: 'Arial', sans-serif;
+text-align: center;
+background: url('https://cdn-cbeko.nitrocdn.com/YAysSGytvxeVxHWdRPueSoYmAixjAhdB/assets/images/optimized/rev-f65e9ad/welovecatsandkittens.com/wp-content/uploads/2013/12/kittens-in-unison.gif') no-repeat center center fixed;
+background-size: cover;
+margin: 0;
+padding: 0;
+}
+
+h1 {
+background-color: #3c2c4b;
+color: #fff;
+padding: 20px;
+margin: 0;
+}
+h4 {
+background-color: #6c5680;
+color: #fff;
+padding: 20px;
+margin: 0;
+}
+.cat-container {
+max-width: 500px;
+margin: 20px auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+transition: box-shadow 0.3s ease-in-out;
+}
+
+.cat-container p { 
+font-size: 20px;
+}
+
+
+.cat-container:hover {
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.texto-container {
+max-width: 10000px;
+margin: 20px auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+transition: box-shadow 0.3s ease-in-out;
+text-align: justify;
+}
+
+
+.texto-container h2 {
+background-color: #593d74;
+color: #fff;
+padding: 20px;
+margin: 0;
+text-align: center;
+}
+
+.texto-container:hover {
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#cat-image {
+max-width: 100%;
+height: auto;
+border: 1px solid #ccc;
+border-radius: 10px;
+margin-bottom: 15px;
+}
+
+#get-cat-button {
+background-color: #7d43b3;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out;
+}
+
+#get-cat-button:hover {
+background-color: #3465c0;
+}
+
+/* Estilos para os containers lado a lado */
+.container-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espaço entre os subcontainers */
+  
+  }
+
+/* Estilos para os containers lado a lado */
+.container-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espaço entre os subcontainers */
+  
+  }  
+
+.sub-container {
+flex: 1; /* Distribui espaço igualmente entre os subcontainers */
+background-color: #f0f0f0;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+text-align: center;
+width: calc(20% - 20px); /* Calcula o tamanho com margens */
+margin-bottom: 20px;
+
+}
+
+.sub-container p{
+flex: 1; /* Distribui espaço igualmente entre os subcontainers */
+background-color: #f0f0f0;
+color:rgb(0, 0, 0);
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+text-align: justify;
+
+}
+
+/* Estilos para as imagens dentro dos containers */
+.sub-container img {
+max-width: 50%; /* Define o tamanho máximo das imagens */
+max-height: 50%; /* Define o tamanho máximo das imagens */
+object-fit: cover; /* Mantém proporções e preenche o espaço */
+}
+
+ /* Estilização do rodapé (footer) */
+ footer {
+  background-color: #3c2c4b;
+  padding: 1%;
+  text-align: center;
+}
+
+.footer-links {
+  margin-bottom: 1%;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1%;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-text {
+  color: #e4e1e1;
+  font-size: small;
+}
+/* muda as resoluções p telas menores */
+@media (max-width: 768px) {
+    header h1 {
+      font-size: 2em;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      justify-content: flex-start; /* alinhamento vertical no topo */
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin-left: 0;
+      margin-bottom: 1em;
+    }
+   /* Estilos para o contêiner principal */
+.cat-container {
+  display: flex;
+  flex-direction: column; /* Em dispositivos menores, organize em coluna */
+}
+
+/* Botão para mostrar outro gato */
+#get-cat-button {
+  margin-top: 10px; /* Adicione algum espaço acima do botão */
+}
+
+/* Estilos para os contêineres de gatos */
+.container-row, .container-column {
+  display: flex;
+  flex-wrap: wrap; /* Quebra para a próxima linha quando o espaço é insuficiente */
+  justify-content: space-between; /* Distribui os contêineres igualmente */
+}
+
+.sub-container {
+  flex: 0 1 calc(100% - 10px); /* Divide igualmente em duas colunas e adiciona algum espaço entre elas */
+  margin-bottom: 20px; /* Adicione algum espaço abaixo dos contêineres */
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.footer-content {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.footer-links{
+  flex: 1;
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+}
